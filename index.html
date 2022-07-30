@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="./JS/homework.js" defer></script>
+    <link rel="stylesheet" href="./style/homework.css" />
+    <title>homework</title>
+  </head>
+  <body>
+    <div class="container">
+      <br /><br /><br /><br />
+
+      <div class="row">
+        <div class="col">
+          <input
+            type="text"
+            placeholder="First Name"
+            name=""
+            id="firstnameId"
+          />
+        </div>
+        <div class="col">
+          <input type="text" placeholder="Last Name" name="" id="lastnameId" />
+        </div>
+        <div class="col">
+          <input
+            type="password"
+            name=""
+            id="passwordId"
+            placeholder="Password"
+          />
+        </div>
+        <div class="col">
+          <input
+            type="email"
+            placeholder="Email Address"
+            name=""
+            id="emailId"
+          />
+        </div>
+        <div class="col">
+          <button onclick="handleInput()">add new user</button>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col col-middle">
+          <button onclick="clearDatabase()" class="button">
+            clear database
+          </button>
+        </div>
+      </div>
+      <div class="row usercardsgrid"></div>
+    </div>
+  </body>
+</html>
